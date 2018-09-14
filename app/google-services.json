@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "498749274394",
+    "firebase_url": "https://customer-services-119.firebaseio.com",
+    "project_id": "customer-services-119",
+    "storage_bucket": "customer-services-119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498749274394:android:8b5b963a1de9a858",
+        "android_client_info": {
+          "package_name": "com.example.ksnimesh.theglenrock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498749274394-m5g94l553j70e2dia7h8bpgjehqht9d7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ksnimesh.theglenrock",
+            "certificate_hash": "25326c5eb4e7140ebf4f2aa27da179a234bb947f"
+          }
+        },
+        {
+          "client_id": "498749274394-oa4mbpe6a283rjgov7fi3eihlfrco8ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ealpZYSPRqTHgVijyH2XlCFlbFUcvCE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498749274394-oa4mbpe6a283rjgov7fi3eihlfrco8ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
