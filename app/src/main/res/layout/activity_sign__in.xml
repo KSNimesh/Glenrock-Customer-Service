@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Sign_In"
-    android:background="@drawable/food1">
+    android:background="@drawable/food1"
+    android:alpha="0.9">
 
 <LinearLayout
     android:orientation="vertical"
@@ -17,12 +18,12 @@
 
     <EditText
         android:id="@+id/RoomNo"
-        android:hint="Room No"
+        android:hint="Package No"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="0678"
+        android:text="678"
         android:textSize="34dp"
         android:inputType="phone"
         />

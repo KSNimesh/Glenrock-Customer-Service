@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.ksnimesh.theglenrock.FoodOrder.FoodCommon;
 import com.example.ksnimesh.theglenrock.Model.User;
 import com.google.android.gms.signin.SignIn;
 import com.google.firebase.database.DataSnapshot;
@@ -53,11 +54,17 @@ public class Sign_In extends AppCompatActivity {
                             //getting user infomation
                           mdialog.dismiss();
                             User user = dataSnapshot.child(RoomNO.getText().toString()).getValue(User.class);
-
+                            user.setRoompack ( RoomNO.getText ().toString () );
                             if (user.getPassword().equals(PasswordNo.getText().toString())) {
-                                Toast.makeText(Sign_In.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(Sign_In.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
+                                Intent FoodnavHome=new Intent( Sign_In.this, com.example.ksnimesh.theglenrock.FoodnavHome.class );
+                                FoodCommon.currentUser=user;
+                                startActivity( FoodnavHome );
+                                finish();
+
 
                             } else {
+                                mdialog.dismiss();
 
                                 Toast.makeText(Sign_In.this, "Wrong Password !!", Toast.LENGTH_SHORT).show();
                             }

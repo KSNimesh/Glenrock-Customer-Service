@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recycler_food" type="id" />
+    <item name="CollapsedAppbar" type="id" />
+    <item name="cart_layout" type="id">cart_layout</item>
+</resources>

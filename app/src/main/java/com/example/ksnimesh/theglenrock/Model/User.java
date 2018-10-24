@@ -3,6 +3,7 @@ package com.example.ksnimesh.theglenrock.Model;
 public class User {
     private String Room_NO;
     private String Password;
+    private String Roompack;
 
     public User()  {
     }
@@ -10,6 +11,14 @@ public class User {
     public User(String room_NO, String password) {
         Room_NO = room_NO;
         Password = password;
+    }
+
+    public String getRoompack() {
+        return Roompack;
+    }
+
+    public void setRoompack(String roompack) {
+        Roompack = roompack;
     }
 
     public String getRoom_NO() {

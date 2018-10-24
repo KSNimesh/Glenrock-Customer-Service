@@ -10,14 +10,14 @@
 
 
 
-     <ImageView
-         android:layout_width="200dp"
-         android:layout_height="200dp"
-         android:layout_alignParentTop="true"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="88dp"
-         android:contentDescription="@string/todo"
-         app:srcCompat="@drawable/ic_home_black_24dp" />
+     <!--<ImageView-->
+         <!--android:layout_width="200dp"-->
+         <!--android:layout_height="200dp"-->
+         <!--android:layout_alignParentTop="true"-->
+         <!--android:layout_centerHorizontal="true"-->
+         <!--android:layout_marginTop="88dp"-->
+         <!--android:contentDescription="@string/todo"-->
+         <!--app:srcCompat="@drawable/ic_home_black_24dp" />-->
 
     <TextView
         android:id="@+id/txtslogin"
@@ -27,8 +27,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="156dp"
         android:gravity="center"
-        android:text="@string/txtslogin"
-        android:textColor="@android:color/white" />
+        android:text="Srilankan tourisum best hotel in belihuloya,provide semi lucxary foods and beavarages"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"/>
 
 
     <Button

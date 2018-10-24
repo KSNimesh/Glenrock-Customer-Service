@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp"
-    android:background="@drawable/food1">
+    android:background="@drawable/ttw"
+    android:alpha="0.8">
 
 
         <LinearLayout
@@ -16,6 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+            <EditText
+                android:id="@+id/Roompack"
+                android:hint="Package NO"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="34dp"
+                android:inputType="phone"
+                />
+
             <EditText
                 android:id="@+id/RoomNo"
                 android:hint="Room No"
@@ -23,7 +37,7 @@
                 android:textColorHint="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="0678"
+                android:text=""
                 android:textSize="34dp"
                 android:inputType="phone"
                 />
@@ -34,7 +48,7 @@
                 android:textColorHint="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="1234"
+                android:text=""
                 android:textSize="34dp"
                 android:inputType="textPassword"
                 />
@@ -42,23 +56,23 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnSignIn"
-            android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
 
 
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_margin="8dp"
-            android:layout_marginStart="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
-            android:text="Sign In"
-            android:textColor="@android:color/white"
-            android:layout_alignParentLeft="true" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Sign up"
+        android:textColor="@android:color/white" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

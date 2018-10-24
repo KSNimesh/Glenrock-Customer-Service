@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -43,13 +44,49 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyBkv0A1t6icf7MO2y1SfZL1Y6c8Qaw_xnM" /> -->
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:name=".MapsActivity1"
+            android:label="Maps1" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".Tabs.TabActivity" />
+        <activity
+            android:name=".FoodnavHome"
+            android:label="@string/title_activity_foodnav_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Foodlist" />
+        <activity android:name=".LandmarkPlaces.Landmark_detail01" />
+        <activity
+            android:name=".MapsActivity3"
+            android:label="@string/title_activity_maps3" />
+        <activity
+            android:name=".MapsActivity4"
+            android:label="@string/title_activity_maps4" />
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Cart_Layout" />
+        <activity android:name=".HomeMain" />
+        <activity
+            android:name=".Botomnavigation1"
+            android:label="@string/title_activity_botomnavigation1"></activity>
     </application>
 
 </manifest>

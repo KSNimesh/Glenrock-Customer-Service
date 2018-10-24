@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='android.support.design.widget.BottomNavigationView void setOnNavigationItemSelectedListener(android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

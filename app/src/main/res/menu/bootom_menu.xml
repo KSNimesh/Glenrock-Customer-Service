@@ -2,31 +2,26 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_land_marks"
+        android:id="@+id/nav_home"
         android:enabled="true"
-        android:icon="@drawable/ic_place_black_24dp"
-        android:title="Land Marks"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/nav_contact"
+        android:enabled="true"
+        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:title="Contact"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_Railway"
+        android:id="@+id/nav_event"
         android:enabled="true"
-        android:icon="@drawable/ic_directions_railway_black_24dp"
-        android:title="Railway Stations"
+        android:icon="@drawable/ic_event_available_black_24dp"
+        android:title="Event"
         app:showAsAction="ifRoom" />
 
-    <item
-        android:id="@+id/action_Feul"
-        android:enabled="true"
-        android:icon="@drawable/ic_local_gas_station_black_24dp"
-        android:title="Feul Station"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/action_atm"
-        android:enabled="true"
-        android:icon="@drawable/ic_local_atm_black_24dp"
-        android:title="Bank ATM"
-        app:showAsAction="ifRoom" />
 
 </menu>

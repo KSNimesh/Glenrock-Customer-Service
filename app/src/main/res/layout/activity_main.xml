@@ -5,113 +5,128 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/image1"
-    android:alpha="0.9">
+   >
+    <!--android:background="@drawable/image1"-->
 
-    <Button
-        android:id="@+id/about_hotel"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
+    <!--android:alpha="0.9"-->
+    <!--<Button-->
+        <!--android:id="@+id/about_hotel"-->
+        <!--android:layout_width="298dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="115dp"-->
+        <!--android:text="About Hotel"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/toolbar2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/toolbar2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/reservation"-->
+        <!--android:layout_width="298dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="172dp"-->
+        <!--android:text="Reservation"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/toolbar2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/toolbar2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/travel_guide"-->
+        <!--android:layout_width="298dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="239dp"-->
+        <!--android:text="Travel Guide"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/toolbar2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/toolbar2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/facilities"-->
+        <!--android:layout_width="298dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="187dp"-->
+        <!--android:text="Facilities"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/toolbar2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/toolbar2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/Connectivity"-->
+        <!--android:layout_width="298dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="119dp"-->
+        <!--android:text="Connectivity"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/toolbar2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/toolbar2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
-        android:text="About Hotel"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        >
+    </FrameLayout>
 
-    <Button
-        android:id="@+id/reservation"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="172dp"
-        android:text="Reservation"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/travel_guide"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/reservation"
-        android:layout_centerHorizontal="true"
-        android:text="Travel Guide"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/facilities"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="187dp"
-        android:text="Facilities"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/Connectivity"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="119dp"
-        android:text="Connectivity"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-
-
-    <include
-        android:id="@+id/home_bottom_toolbar"
-        layout="@layout/activity_main2"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/nav_selector"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bootom_menu">
 
-    <include
-        android:id="@+id/toolbar2"
-        layout="@layout/activity_top_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    </android.support.design.widget.BottomNavigationView>
+
+
+
+    <!--<include-->
+        <!--android:id="@+id/home_bottom_toolbar"-->
+        <!--layout="@layout/activity_main2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+
+
 
 
 </RelativeLayout>

@@ -4,31 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Travel_Guide">
+    tools:context=".Travel_Guide"
+    android:background="@drawable/trvlg"
+    >
 
-    <TextView
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="yame yamee pain yamee"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btnMap"-->
+        <!--android:layout_width="71dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="25dp"-->
+        <!--android:text="@string/map" />-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btnMap2"-->
+        <!--android:layout_width="69dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="110dp"-->
+        <!--android:text="Map2" />-->
+
+    <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="yame yamee pain yamee"/>
-
-
-
-    <include
-        android:id="@+id/bottom_navigation"
-        layout="@layout/activity_maps"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="64dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/bottofm_nav"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--app:itemBackground="@color/colorPrimary"-->
+        <!--app:itemIconTint="@drawable/nav_selector"-->
+        <!--app:itemTextColor="@android:color/white"-->
+        <!--app:menu="@menu/bootom_menu">-->
+
+    <!--</android.support.design.widget.BottomNavigationView>-->
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="110dp"
+        app:button_icon="@drawable/ic_place_black_24dp"
+
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#a2f277"
+        app:hide_text=" Land marks"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:magic_button_size="50dp" />
 
 
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/magic_button"
+        android:layout_marginTop="195dp"
+        app:button_icon="@drawable/ic_directions_railway_black_24dp"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#a2f277"
+        app:hide_text="    Railway Stations"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:magic_button_size="50dp" />
+
+    <br.com.bloder.magic.view.MagicButton
+
+        android:id="@+id/magic_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/magic_button"
+
+        android:layout_marginBottom="217dp"
+        app:button_icon="@drawable/ic_local_gas_station_black_24dp"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#a2f277"
+        app:hide_text="Feul Stations"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:magic_button_size="50dp">
+
+    </br.com.bloder.magic.view.MagicButton>
+
+
+    <br.com.bloder.magic.view.MagicButton
+
+        android:id="@+id/magic_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignStart="@+id/magic_button"
+        android:layout_marginBottom="125dp"
+        app:button_icon="@drawable/ic_local_atm_black_24dp"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="#a2f277"
+        app:hide_text="Bank ATM"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:magic_button_size="50dp">
+
+    </br.com.bloder.magic.view.MagicButton>
 
 
 

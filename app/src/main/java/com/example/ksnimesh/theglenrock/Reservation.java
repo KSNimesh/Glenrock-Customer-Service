@@ -35,6 +35,9 @@ public class Reservation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent SignUp=new Intent(Reservation.this,SignUp.class);
+                startActivity(SignUp);
+
             }
         });
 
