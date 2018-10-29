@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment.GalleryFragment">
+    <!--android:padding="5dp"-->
+    <!--android:paddingBottom="0dp"-->
+    <!--android:paddingLeft="0dp"-->
+    <!--android:paddingRight="0dp"-->
+    <!--android:paddingTop="0dp">-->
+
+    <Button
+        android:id="@+id/btngallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Gallery"
+        android:layout_marginTop="400dp"/>
+
+
+<!--<GridView-->
+    <!--android:id="@+id/girdView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:columnWidth="100dp"-->
+    <!--android:horizontalSpacing="5dp"-->
+    <!--android:numColumns="auto_fit"-->
+    <!--android:stretchMode="columnWidth"-->
+    <!--android:verticalSpacing="5dp"-->
+
+    <!--&gt;</GridView>-->
+
+</RelativeLayout>

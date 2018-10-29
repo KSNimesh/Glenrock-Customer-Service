@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mygallery"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:paddingBottom="0dp"
+    android:padding="5dp"
+    android:background="@drawable/back_gallery"
+    >
+
+    <!--<GridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/girdView"-->
+        <!--android:columnWidth="400dp"-->
+        <!--android:numColumns="3"-->
+        <!--android:horizontalSpacing="5dp"-->
+        <!--android:verticalSpacing="5dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="false"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--/>-->
+    <GridView
+        android:id="@+id/girdView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="200dip"
+        android:gravity="center"
+        android:horizontalSpacing="15dip"
+        android:numColumns="3"
+        android:padding="10dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip"
+        ></GridView>
+
+
+</RelativeLayout>

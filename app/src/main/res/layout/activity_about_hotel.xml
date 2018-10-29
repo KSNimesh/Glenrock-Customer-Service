@@ -7,13 +7,27 @@
     tools:context=".about_hotel">
 
 
-    <android.support.design.widget.BottomNavigationView
+    <FrameLayout
+        android:id="@+id/fragment_container_about"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_alignParentStart="true"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation_about"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="539dp" />
+        >
+    </FrameLayout>
 
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_about"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/nav_selector"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/about_menu">
+
+    </android.support.design.widget.BottomNavigationView>
 
 </RelativeLayout>

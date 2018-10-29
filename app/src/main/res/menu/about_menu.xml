@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_about"
+        android:enabled="true"
+        android:icon="@drawable/ic_subject_black_24dp"
+        android:title="About"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_accomdation"
+        android:enabled="true"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="Accomodation"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:enabled="true"
+        android:icon="@drawable/ic_gallery_24dp"
+        android:title="Gallery"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

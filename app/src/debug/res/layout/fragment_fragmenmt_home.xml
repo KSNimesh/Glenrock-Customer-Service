@@ -4,91 +4,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmenmtHome"
+    tools:context=".HomeFragment.FragmenmtHome"
     android:background="@drawable/image1"
 
     android:alpha="0.9"
     >
 
 
+    <Button
+        android:id="@+id/about_hotels"
+        android:layout_width="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="About Hotel"
+        android:backgroundTint="#a0e680"
 
-        <Button
-            android:id="@+id/reservation"
-            android:layout_width="298dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="172dp"
-            android:text="Reservation"
-            app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/toolbar2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+        />
 
-        <Button
-            android:id="@+id/about_hotels"
-            android:layout_width="298dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="115dp"
-            android:text="About Hotel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/travel_guide"
-            android:layout_width="298dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="239dp"
-            android:text="Travel Guide"
-            app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/toolbar2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reservation"
+        android:layout_width="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:text="Reservation"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#a0e680"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/travel_guide"
+        android:layout_width="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="195dp"
+        android:text="Travel Guide"
+        android:backgroundTint="#a0e680"
+
+        />
 
         <Button
             android:id="@+id/facilities"
-            android:layout_width="298dp"
-            android:layout_height="45dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="187dp"
+            android:layout_width="300dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
             android:text="Facilities"
-            app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/toolbar2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            android:backgroundTint="#a0e680"
+
+            />
 
     <Button
         android:id="@+id/Connectivity"
-        android:layout_width="298dp"
-        android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="119dp"
+        android:layout_width="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
         android:text="Connectivity"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:backgroundTint="#a0e680"
 
-
-
-
-
+        />
 
 
 </FrameLayout>

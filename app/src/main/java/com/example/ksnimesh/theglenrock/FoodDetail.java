@@ -53,12 +53,12 @@ public class FoodDetail extends AppCompatActivity {
         btnCart.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
             public void onClick(View view) {
-                new Database (  getBaseContext ()).addToCart ( new Order (
+                new Database (  getBaseContext ()).addToCart ( new Order(
                         foodId,
                         CurrentFood.getName (),
                         CurrentFood.getPrice (),
                         CurrentFood.getDiscount (),
-                        numberButton.getNumber ()
+                        numberButton.getNumber()
 
 
                 ) );
@@ -77,7 +77,7 @@ public class FoodDetail extends AppCompatActivity {
 
         collapsingToolbarLayout =(CollapsingToolbarLayout)findViewById ( R.id.collasping );
         collapsingToolbarLayout.setExpandedTitleTextAppearance ( R.style.ExpandedAppbar );
-        collapsingToolbarLayout.setCollapsedTitleTextAppearance ( R.id.CollapsedAppbar );
+        collapsingToolbarLayout.setCollapsedTitleTextAppearance ( R.style.CollapsedAppbar );
 
         //Getting Food Id from intent
 

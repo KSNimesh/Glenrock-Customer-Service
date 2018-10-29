@@ -6,11 +6,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.astuetz.PagerSlidingTabStrip;
 import com.example.ksnimesh.theglenrock.Tabs.Tab1;
 import com.example.ksnimesh.theglenrock.Tabs.Tab2;
 import com.example.ksnimesh.theglenrock.Tabs.Tab3;
 import com.example.ksnimesh.theglenrock.Tabs.pagerAdapter;
 
+//
 public class Connectivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,
         Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener
 {
@@ -50,8 +52,5 @@ public class Connectivity extends AppCompatActivity implements Tab1.OnFragmentIn
 
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
 }

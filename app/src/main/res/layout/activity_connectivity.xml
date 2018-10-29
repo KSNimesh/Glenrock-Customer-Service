@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:titleTextColor="@color/colorbtnicn"
 
         android:minHeight="?attr/actionBarSize"
-        
+
         >
         //android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 
@@ -45,8 +45,30 @@
     </android.support.v4.view.ViewPager>
 
 
+ <!--<android.support.design.widget.AppBarLayout-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="wrap_content"-->
+     <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+     <!--&gt;</android.support.design.widget.AppBarLayout>-->
 
 
+<!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbartab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:theme="@style/AppTheme.PopupOverlay"-->
+    <!--&gt;</android.support.v7.widget.Toolbar>-->
 
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/MyTabs"-->
+        <!--app:tabGravity="center"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabIndicatorColor="#fff"-->
+        <!--app:tabBackground="@color/colorPrimary"-->
+        <!--app:tabSelectedTextColor="#fff"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize">-->
 
-</android.support.constraint.ConstraintLayout>
+    <!--</android.support.design.widget.TabLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -25,7 +25,7 @@ public class Database extends SQLiteAssetHelper {
             SQLiteDatabase db=getReadableDatabase ();
         SQLiteQueryBuilder qb=new SQLiteQueryBuilder ();
 
-        String[] sqlSelect={"ProductId","ProductName","Quantity","Price","Discount"};
+        String[] sqlSelect={"ProductId","ProductName","Price","Quantity","Discount"};
         String sqlTable="OrderDetail";
           qb.setTables ( sqlTable );
 
@@ -37,8 +37,8 @@ public class Database extends SQLiteAssetHelper {
             do {
                 result.add ( new Order ( c.getString ( c.getColumnIndex ( "ProductId"  ) ),
                           c.getString ( c.getColumnIndex ( "ProductName"  ) ) ,
-                             c.getString ( c.getColumnIndex ( "Quantity"  ) ) ,
                         c.getString ( c.getColumnIndex ( "Price"  ) ) ,
+                             c.getString ( c.getColumnIndex ( "Quantity"  ) ) ,
                        c.getString ( c.getColumnIndex ( "Discount"  ) )
                       ));
             }while (c.moveToNext ());
@@ -52,11 +52,11 @@ public class Database extends SQLiteAssetHelper {
 
     public void addToCart(Order order){
         SQLiteDatabase db =getReadableDatabase ();
-        String query =String.format ( "INSERT INTO OrderDetail(ProductId,ProductName,Quantity,Price,Discount) VALUES('%S','%S','%S','%S','%S');" ,
+        String query =String.format ( "INSERT INTO OrderDetail(ProductId,ProductName,Price,Quantity,Discount) VALUES('%S','%S','%S','%S','%S');" ,
                order.getProductId (),
                 order.getProductName (),
-                order.getQuantity (),
                 order.getPrice (),
+                order.getQuantity (),
                 order.getDiscount ());
         db.execSQL ( query );
 

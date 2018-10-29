@@ -64,7 +64,7 @@ public class Foodlist extends AppCompatActivity {
                 FoodViewHolder.class ,
                 foodList.orderByChild ( "MenuID" ).equalTo ( categoryId ) ) {
             @Override
-            protected void populateViewHolder(FoodViewHolder viewHolder , Foods model , int position) {
+            protected void populateViewHolder(FoodViewHolder viewHolder , Foods model , int i) {
               viewHolder.food_name.setText ( model.getName () );
                 Picasso.with ( getBaseContext ()).load(model.getImage () )
                         .into ( viewHolder.food_image );
@@ -76,10 +76,10 @@ public class Foodlist extends AppCompatActivity {
 
                 viewHolder.setItemClickListener( new AdapterView.OnItemClickListener () {
                     @Override
-                    public void onItemClick(AdapterView <?> parent , View view , int position , long id) {
+                    public void onItemClick(AdapterView <?> adapterView , View view , int i , long id) {
                        // Toast.makeText ( Foodlist.this , "" + local.getName ( ) , Toast.LENGTH_SHORT ).show ( );
                         Intent foodDetail=new Intent ( Foodlist.this,FoodDetail.class );
-                        foodDetail.putExtra ( "FoodId",adapter.getRef ( position ).getKey () );
+                        foodDetail.putExtra ( "FoodId",adapter.getRef ( i ).getKey () );
                         startActivity ( foodDetail );
                     }
 

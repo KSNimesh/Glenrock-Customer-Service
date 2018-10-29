@@ -2,19 +2,20 @@ package com.example.ksnimesh.theglenrock.Model;
 
 public class Order {
     private String ProductId;
-    private  String ProductName;
-    private String Quantity;
+    private String ProductName;
     private String Price;
+    private  String Quantity;
     private String Discount;
+
 
     public Order() {
     }
 
-    public Order(String productId , String productName , String quantity , String price , String discount) {
+    public Order(String productId ,String productName ,String price ,String quantity ,String discount) {
         ProductId = productId;
         ProductName = productName;
-        Quantity = quantity;
         Price = price;
+        Quantity = quantity;
         Discount = discount;
     }
 
@@ -34,20 +35,20 @@ public class Order {
         ProductName = productName;
     }
 
-    public String getQuantity() {
-        return Quantity;
-    }
-
-    public void setQuantity(String quantity) {
-        Quantity = quantity;
-    }
-
     public String getPrice() {
         return Price;
     }
 
     public void setPrice(String price) {
         Price = price;
+    }
+
+    public String getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        Quantity = quantity;
     }
 
     public String getDiscount() {

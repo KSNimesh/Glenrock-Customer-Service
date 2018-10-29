@@ -1,20 +1,13 @@
 package com.example.ksnimesh.theglenrock;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.amulyakhare.textdrawable.TextDrawable;
 import com.example.ksnimesh.theglenrock.Database.Database;
 import com.example.ksnimesh.theglenrock.Model.Order;
 import com.example.ksnimesh.theglenrock.ViewHolderF.CartAdapter;
@@ -25,8 +18,6 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import info.hoang8f.widget.FButton;
 
 public class Cart extends AppCompatActivity  {
 
