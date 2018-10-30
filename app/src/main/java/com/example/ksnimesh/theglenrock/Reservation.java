@@ -23,7 +23,7 @@ public class Reservation extends AppCompatActivity {
 
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
-        PasswordNo= (EditText)findViewById(R.id.passwordNo);
+        PasswordNo= (EditText)findViewById(R.id.Password_No);
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,10 +44,7 @@ public class Reservation extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                User user1 = new User();
-//                if(user1.getPassword().equals(PasswordNo.getText().toString())){
-//                    Toast.makeText(Reservation.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
-//                }
+
                 Intent SignIn=new Intent(Reservation.this,Sign_In.class);
                 startActivity(SignIn);
             }

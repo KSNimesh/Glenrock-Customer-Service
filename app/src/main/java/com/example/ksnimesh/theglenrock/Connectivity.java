@@ -1,5 +1,6 @@
 package com.example.ksnimesh.theglenrock;
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -10,7 +11,28 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.example.ksnimesh.theglenrock.Tabs.Tab1;
 import com.example.ksnimesh.theglenrock.Tabs.Tab2;
 import com.example.ksnimesh.theglenrock.Tabs.Tab3;
+import com.example.ksnimesh.theglenrock.Tabs.TabPageAdapter;
 import com.example.ksnimesh.theglenrock.Tabs.pagerAdapter;
+
+//public class Connectivity extends AppCompatActivity{
+//   private ViewPager myViewpager;
+//  private TabPageAdapter tabPageAdapter;
+//  private TabLayout myTab;
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate( savedInstanceState );
+//        setContentView( R.layout.activity_connectivity );
+//
+//
+//        myViewpager=(ViewPager)findViewById( R.id.Main_tab_page );
+//        tabPageAdapter=new TabPageAdapter( getSupportFragmentManager() );
+//        myViewpager.setAdapter( tabPageAdapter );
+//        myTab=(TabLayout)findViewById( R.id.Main_tabs );
+//        myTab.setupWithViewPager( myViewpager );
+//    }
+//
+//}
 
 //
 public class Connectivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,

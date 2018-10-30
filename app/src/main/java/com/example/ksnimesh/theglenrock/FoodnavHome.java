@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.example.ksnimesh.theglenrock.FoodOrder.FoodCommon;
 import com.example.ksnimesh.theglenrock.Model.Category;
+import com.example.ksnimesh.theglenrock.Model.Order;
 import com.example.ksnimesh.theglenrock.ViewHolderF.FoodViewHolder;
 import com.example.ksnimesh.theglenrock.ViewHolderF.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -179,10 +180,17 @@ public class FoodnavHome extends AppCompatActivity
         if (id == R.id.nav_Menu) {
             // Handle the camera action
         } else if (id == R.id.nav_Cart) {
+            Intent CartIntent=new Intent( FoodnavHome.this,Cart.class );
+            startActivity( CartIntent );
 
         } else if (id == R.id.nav_Orders) {
 
+            Intent OderIntent=new Intent( FoodnavHome.this,OrderStatus.class );
+            startActivity( OderIntent );
+
         } else if (id == R.id.nav_Logout) {
+            Intent signIn=new Intent( FoodnavHome.this,Sign_In.class );
+            startActivity( signIn );
 
         }
 

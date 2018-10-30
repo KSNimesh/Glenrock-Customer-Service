@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Sign_In extends AppCompatActivity {
-        EditText RoomNO,PasswordNo;
+        EditText edtPacakage_No,edtPassword_No;
         Button btnSignIn;
 
     @Override
@@ -28,8 +28,8 @@ public class Sign_In extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__in);
 
-        PasswordNo= (EditText)findViewById(R.id.passwordNo);
-        RoomNO= (EditText)findViewById(R.id.RoomNo);
+        edtPassword_No= (EditText)findViewById(R.id.Password_No);
+        edtPacakage_No= (EditText)findViewById(R.id.Package_No);
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
 
         //init Firebase
@@ -40,6 +40,8 @@ public class Sign_In extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 final ProgressDialog mdialog =new ProgressDialog(Sign_In.this);
                mdialog.setMessage("Please waiting...");
                 mdialog.show();
@@ -50,13 +52,15 @@ public class Sign_In extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                         //Check if user not exist in database
-                        if (dataSnapshot.child(RoomNO.getText().toString()).exists()) {
+                        if (dataSnapshot.child(edtPacakage_No.getText().toString()).exists()) {
                             //getting user infomation
                           mdialog.dismiss();
-                            User user = dataSnapshot.child(RoomNO.getText().toString()).getValue(User.class);
-                            user.setRoompack ( RoomNO.getText ().toString () );
-                            if (user.getPassword().equals(PasswordNo.getText().toString())) {
-                               // Toast.makeText(Sign_In.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
+                            User user = dataSnapshot.child(edtPacakage_No.getText().toString()).getValue(User.class);
+                            user.setPackage_No ( edtPacakage_No.getText ().toString () );
+                            if (user.getPassword().equals(edtPassword_No.getText().toString())) {
+                               Toast.makeText(Sign_In.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
+
+
                                 Intent FoodnavHome=new Intent( Sign_In.this, com.example.ksnimesh.theglenrock.FoodnavHome.class );
                                 FoodCommon.currentUser=user;
                                 startActivity( FoodnavHome );
@@ -72,7 +76,7 @@ public class Sign_In extends AppCompatActivity {
                         }
                         else{
                             mdialog.dismiss();
-                            Toast.makeText(Sign_In.this, "User not exist in Database!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Sign_In.this, "Package_No not exist in Database!", Toast.LENGTH_SHORT).show();
                         }
 
                     }

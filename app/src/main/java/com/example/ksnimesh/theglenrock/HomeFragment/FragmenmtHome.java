@@ -115,7 +115,7 @@ public class FragmenmtHome extends Fragment {
 
 
     public void openconnect() {
-        Intent intent = new Intent( getActivity(),com.example.ksnimesh.theglenrock.Connectivity.class);
+        Intent intent = new Intent( getActivity(),Connectivity.class);
         startActivity( intent );
     }
 

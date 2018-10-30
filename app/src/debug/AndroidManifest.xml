@@ -28,7 +28,8 @@
             android:label="@string/title_activity_maps2" />
         <activity android:name=".Maps.Lanmark_info" />
         <activity android:name=".FoodDetails" />
-        <activity android:name=".Mygallery"></activity>
+        <activity android:name=".Mygallery" />
+        <activity android:name=".OrderStatus"></activity>
     </application>
 
 </manifest>

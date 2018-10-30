@@ -1,25 +1,17 @@
 package com.example.ksnimesh.theglenrock.Tabs;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 
-public class pagerAdapter extends FragmentStatePagerAdapter {
-    int mNoOftabs;
-
-
-    public pagerAdapter(FragmentManager fm,int NumberOftabs)
-    {
-
-        super(fm);
-        this.mNoOftabs=NumberOftabs;
-
-
+public class TabPageAdapter extends FragmentPagerAdapter {
+    public TabPageAdapter(FragmentManager fm) {
+        super( fm );
     }
 
     @Override
     public Fragment getItem(int position) {
-
         switch (position) {
 
             case 0:
@@ -35,27 +27,27 @@ public class pagerAdapter extends FragmentStatePagerAdapter {
                 return null;
         }
     }
+
     @Override
     public int getCount() {
-        return mNoOftabs;
+        return 3;
     }
 
-
+    @Nullable
+    @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0:
-                return "Feedback";
+       switch (position){
+           case 0:
+               return "Tab1";
 
-            case 1:
-                return "Social Medias";
-            case 2:
-                return "Others";
+           case 1:
+               return "Tab2";
+           case 2:
+               return "Tab3";
 
-            default:
-                return null;
+               default:
+                   return null;
 
-        }
+    }
     }
 }
-
-

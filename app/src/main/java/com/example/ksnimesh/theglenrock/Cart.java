@@ -1,15 +1,24 @@
 package com.example.ksnimesh.theglenrock;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.preference.DialogPreference;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ksnimesh.theglenrock.Database.Database;
+import com.example.ksnimesh.theglenrock.FoodOrder.FoodCommon;
 import com.example.ksnimesh.theglenrock.Model.Order;
+import com.example.ksnimesh.theglenrock.Model.Request;
 import com.example.ksnimesh.theglenrock.ViewHolderF.CartAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,7 +34,7 @@ public class Cart extends AppCompatActivity  {
     RecyclerView.LayoutManager LayoutManager;
 
     FirebaseDatabase database;
-    DatabaseReference request;
+    DatabaseReference requests;
 
     TextView txtTotalPrice;
     Button btnPlace;
@@ -40,7 +49,7 @@ public class Cart extends AppCompatActivity  {
         setContentView ( R.layout.activity_cart );
 
         database= FirebaseDatabase.getInstance ();
-        request=database.getReference ("Requests");
+        requests=database.getReference ("Requests");
 
         recylerView = (RecyclerView) findViewById ( R.id.listCart );
         recylerView.setHasFixedSize ( true );
@@ -49,12 +58,71 @@ public class Cart extends AppCompatActivity  {
 
         txtTotalPrice=(TextView)findViewById ( R.id.total );
         btnPlace=(Button)findViewById ( R.id.btnPlaceOrder );
+
+        btnPlace.setOnClickListener( new View.OnClickListener( ) {
+            @Override
+            public void onClick(View v) {
+               showAlertDialog();
+            }
+        } );
         
         loadListFood();
 
     }
 
-public void loadListFood() {
+    private void showAlertDialog() {
+
+        AlertDialog.Builder alertDiaglog = new AlertDialog.Builder( Cart.this );
+        alertDiaglog.setTitle( "One More Step..!" );
+        alertDiaglog.setMessage( "Enter your Name:" );
+
+        final EditText edtAddress =new EditText( Cart.this );
+
+         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams.MATCH_PARENT,
+        LinearLayout.LayoutParams.MATCH_PARENT
+        );
+
+         edtAddress.setLayoutParams( lp );
+         alertDiaglog.setView( edtAddress );
+         alertDiaglog.setIcon( R.drawable.ic_shopping_cart_black_24dp );
+
+         alertDiaglog.setPositiveButton( "Yes" ,new DialogInterface.OnClickListener(){
+
+             @Override
+             public void onClick(DialogInterface dialogInterface, int i){
+
+                  Request request =new Request(
+                    FoodCommon.currentUser.getPackage_No(),
+                    FoodCommon.currentUser.getRoom_NO(),
+                          edtAddress.getText().toString(),
+                    txtTotalPrice.getText().toString(),
+                    cart
+
+
+                  );
+                  //submitting firebase to that
+
+                  requests.child( String.valueOf( System.currentTimeMillis() ) ).setValue( request );
+                  new Database( getBaseContext() ).cleanCart();
+                 Toast.makeText( Cart.this,"Thank your ,Order Placed.." ,Toast.LENGTH_SHORT).show();
+                 finish();
+
+             }
+                 } );
+
+         alertDiaglog.setNegativeButton( "No" ,new DialogInterface.OnClickListener( ) {
+             @Override
+             public void onClick(DialogInterface dialog ,int which) {
+                 dialog.dismiss();
+             }
+         } );
+
+         alertDiaglog.show();
+
+    }
+
+    public void loadListFood() {
         cart=new Database ( this ).getCarts ();
         adapter=new CartAdapter (cart,this );
         recylerView.setAdapter ( adapter );
@@ -63,7 +131,7 @@ public void loadListFood() {
 
         int total=0;
         for(Order order:cart){
-            total += (Integer.parseInt ( order.getPrice () ))*(Integer.parseInt ( order.getQuantity () ));
+            total += (Integer.parseInt ( order.getPrice () ))*(Integer.parseInt ( order.getDiscount () ));
 
             Locale locale=new Locale ( "en","US" );
             NumberFormat fmt= NumberFormat.getCurrencyInstance (locale);

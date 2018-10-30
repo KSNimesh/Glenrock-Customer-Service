@@ -17,7 +17,7 @@
     android:layout_height="wrap_content">
 
     <EditText
-        android:id="@+id/RoomNo"
+        android:id="@+id/Package_No"
         android:hint="Package No"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
@@ -28,7 +28,7 @@
         android:inputType="phone"
         />
     <EditText
-        android:id="@+id/passwordNo"
+        android:id="@+id/Password_No"
         android:hint="Passsword"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
