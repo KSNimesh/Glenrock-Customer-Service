@@ -50,12 +50,15 @@ dependencies {
     implementation 'com.android.support:design:28.0.0-rc01'
     implementation 'com.android.support:support-v4:18.0.+'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+
     implementation 'com.firebaseui:firebase-ui-database:1.2.0'
     // implementation 'com.firebase.ui.database.FirebaseRecyclerAdapter;'
     //button
     implementation 'com.github.bloder:magic:1.1'
+
     //fooddetails
     implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
     //sqlLite and cart
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
@@ -65,6 +68,11 @@ dependencies {
 
     //feedback smile
     implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+
+    //FBButton
+  //  implementation 'com.github.jd-alexander:android-flat-button:v1.1'
+
+
 
 
 }

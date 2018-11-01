@@ -43,6 +43,7 @@ public class Connectivity extends AppCompatActivity implements Tab1.OnFragmentIn
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connectivity);
+        setTitle( "Connectivity" );
 
         TabLayout tabLayout=(TabLayout)findViewById( R.id.tablayout );
         tabLayout.addTab( tabLayout.newTab().setText("Feedback") );

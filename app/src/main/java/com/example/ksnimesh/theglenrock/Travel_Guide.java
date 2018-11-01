@@ -25,6 +25,8 @@ public class Travel_Guide extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_travel__guide );
+        setTitle( "Travel Guide" );
+
 
 //        maps = (Button) findViewById ( R.id.btnMap );
 //        maps.setOnClickListener ( new View.OnClickListener ( ) {
@@ -35,6 +37,7 @@ public class Travel_Guide extends AppCompatActivity {
 //        } );
 
         //new
+
         map3 = (MagicButton) findViewById ( R.id.magic_button );
         map3.setMagicButtonClickListener ( new View.OnClickListener ( ) {
             @Override

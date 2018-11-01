@@ -58,7 +58,7 @@ public class Sign_In extends AppCompatActivity {
                             User user = dataSnapshot.child(edtPacakage_No.getText().toString()).getValue(User.class);
                             user.setPackage_No ( edtPacakage_No.getText ().toString () );
                             if (user.getPassword().equals(edtPassword_No.getText().toString())) {
-                               Toast.makeText(Sign_In.this, "Sign In Successfully !", Toast.LENGTH_SHORT).show();
+                               Toast.makeText(Sign_In.this, "Sign In Successfully.!", Toast.LENGTH_SHORT).show();
 
 
                                 Intent FoodnavHome=new Intent( Sign_In.this, com.example.ksnimesh.theglenrock.FoodnavHome.class );

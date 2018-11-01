@@ -48,13 +48,56 @@ public class SignUp extends AppCompatActivity {
 
                 //validation
                 register( );
+//
+//                table_User.addListenerForSingleValueEvent( new ValueEventListener( ) {
+//
+//
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//
+//
+//
+//                        if (dataSnapshot.child(edtPackage.getText().toString()).exists( ))
+//
+//                        {
+//                            mdialog.dismiss( );
+//                           Toast.makeText( SignUp.this ,"package is already register" ,Toast.LENGTH_SHORT ).show( );
+//
+//
+//                        }
+//
+//                        else {
+//                            mdialog.dismiss( );
+//                            User user = new User( edtRoom.getText( ).toString( ) ,edtPassword.getText( ).toString( ) );
+//                            table_User.child( edtPackage.getText( ).toString( ) ).setValue( user );
+//                            Toast.makeText( SignUp.this ,"Sign up Successfully|||" ,Toast.LENGTH_SHORT ).show( );
+//                            finish();
+//
+//
+//                        }
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//
+//
+//
+//
+//                });
+//
+//        }
+//    } );
+//
+//}
+
 
                 table_User.addValueEventListener( new ValueEventListener( ) {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        //checking ready
-                      // Toast.makeText( SignUp.this,"jkdkdnjd",Toast.LENGTH_SHORT ).show();
-                      //  String x= edtPackage.getText().toString();
+
 
 
                         if (dataSnapshot.child(edtPackage.getText().toString()).exists( ))
@@ -70,7 +113,7 @@ public class SignUp extends AppCompatActivity {
                             mdialog.dismiss( );
                             User user = new User( edtRoom.getText( ).toString( ) ,edtPassword.getText( ).toString( ) );
                             table_User.child( edtPackage.getText( ).toString( ) ).setValue( user );
-                            Toast.makeText( SignUp.this ,"Sign up Successfully|||" ,Toast.LENGTH_SHORT ).show( );
+                            Toast.makeText( SignUp.this ,"Sign up Successfully.!" ,Toast.LENGTH_SHORT ).show( );
                             finish();
 
 

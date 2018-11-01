@@ -19,6 +19,7 @@ public class FeedBack extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_feed_back );
+        setTitle( "Facilities" );
 
 
             final EditText your_name        = (EditText) findViewById(R.id.your_name);

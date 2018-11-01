@@ -4,6 +4,7 @@ public class User {
     private String Room_NO;
     private String Password;
     private String Package_No;
+    private String IsStaff;
 
     public User()  {
     }
@@ -11,6 +12,16 @@ public class User {
     public User(String room_NO, String password) {
         Room_NO = room_NO;
         Password = password;
+        IsStaff="false";
+    }
+
+
+    public String getIsStaff() {
+        return IsStaff;
+    }
+
+    public void setIsStaff(String isStaff) {
+        IsStaff = isStaff;
     }
 
     public String getPackage_No() {
