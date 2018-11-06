@@ -48,7 +48,7 @@ public class Cart extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_cart );
-
+//adapter.notifyDataSetChanged();
         database= FirebaseDatabase.getInstance ();
         requests=database.getReference ("Requests");
 
@@ -131,7 +131,7 @@ public class Cart extends AppCompatActivity  {
     public void loadListFood() {
         cart=new Database ( this ).getCarts ();
         adapter=new CartAdapter (cart,this );
-        adapter.notifyDataSetChanged();
+       // adapter.notifyDataSetChanged();
         recylerView.setAdapter ( adapter );
 
         //calculating total price
@@ -144,6 +144,7 @@ public class Cart extends AppCompatActivity  {
             NumberFormat fmt= NumberFormat.getCurrencyInstance (locale);
 
             txtTotalPrice.setText ( fmt.format ( total ) );
+
         }
 
     }

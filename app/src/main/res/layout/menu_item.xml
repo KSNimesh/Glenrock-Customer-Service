@@ -27,7 +27,8 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             />
-        
+
+
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

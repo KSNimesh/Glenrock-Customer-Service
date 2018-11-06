@@ -62,7 +62,7 @@ public class Foodlist extends AppCompatActivity {
         adapter  = new FirebaseRecyclerAdapter <Foods, FoodViewHolder> ( Foods.class ,
                 R.layout.food_items ,
                 FoodViewHolder.class ,
-                foodList.orderByChild ( "MenuID" ).equalTo ( categoryId ) ) {
+                foodList.orderByChild ( "menuId" ).equalTo ( categoryId ) ) {
             @Override
             protected void populateViewHolder(FoodViewHolder viewHolder , Foods model , int i) {
               viewHolder.food_name.setText ( model.getName () );
@@ -96,6 +96,7 @@ public class Foodlist extends AppCompatActivity {
 //            }
         };
         recyclerView.setAdapter ( adapter );
+        adapter.notifyDataSetChanged();
         return false;
     }
 }

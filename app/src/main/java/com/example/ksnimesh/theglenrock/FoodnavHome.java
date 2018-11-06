@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.example.ksnimesh.theglenrock.FoodOrder.FoodCommon;
 import com.example.ksnimesh.theglenrock.Model.Category;
 import com.example.ksnimesh.theglenrock.Model.Order;
+import com.example.ksnimesh.theglenrock.Service.ListenOrder;
 import com.example.ksnimesh.theglenrock.ViewHolderF.FoodViewHolder;
 import com.example.ksnimesh.theglenrock.ViewHolderF.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -32,6 +33,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.jar.Attributes;
 
@@ -104,6 +106,10 @@ public class FoodnavHome extends AppCompatActivity
         recyler_menu.setLayoutManager( LayoutManager );
 
         loadMenu();
+
+        //Register Services
+        Intent service = new Intent( FoodnavHome.this,ListenOrder.class );
+        startService( service );
 
 
 

@@ -2,11 +2,13 @@ package com.example.ksnimesh.theglenrock.ViewHolderF;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.example.ksnimesh.theglenrock.FoodInterface.InternClickListener;
 import com.example.ksnimesh.theglenrock.R;
 
 public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -15,9 +17,9 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
     public TextView txt_OrderPackage;
     public TextView txt_OrderAdress;
 
-    private AdapterView.OnItemClickListener itemClickListener;
+   private AdapterView.OnItemClickListener itemClickListener;
 
-
+   // private InternClickListener internClickListener;
 
 
      public OrderViewHolder(@NonNull View itemView) {
@@ -28,6 +30,7 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
          txt_OrderPackage= (TextView)itemView.findViewById( R.id.order_package );
 
          itemView.setOnClickListener( this );
+        // itemView.setOnCreateContextMenuListener( this );
 
 
     }
@@ -38,8 +41,11 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
 
     @Override
     public void onClick(View view) {
-        itemClickListener.onItemClick(null, view, getAdapterPosition(), view.getId());
+     itemClickListener.onItemClick(null, view, getAdapterPosition(), view.getId());
+
+        //internClickListener.onclick( view, getAdapterPosition(), false);
 
     }
+
 
 }
