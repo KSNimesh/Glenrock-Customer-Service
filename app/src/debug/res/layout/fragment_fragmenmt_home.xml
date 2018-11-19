@@ -14,7 +14,7 @@
     <Button
         android:id="@+id/about_hotels"
         android:layout_width="300dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
         android:text="About Hotel"
@@ -27,7 +27,7 @@
     <Button
         android:id="@+id/reservation"
         android:layout_width="300dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
         android:text="Reservation"
         android:layout_marginTop="130dp"
@@ -40,7 +40,7 @@
     <Button
         android:id="@+id/travel_guide"
         android:layout_width="300dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
 
         android:layout_marginTop="195dp"
@@ -52,7 +52,7 @@
         <Button
             android:id="@+id/facilities"
             android:layout_width="300dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="40dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
             android:text="Facilities"
@@ -63,13 +63,15 @@
     <Button
         android:id="@+id/Connectivity"
         android:layout_width="300dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
         android:text="Connectivity"
         android:backgroundTint="#a0e680"
+        android:elevation="10dp"
 
         />
+
 
 
 </FrameLayout>

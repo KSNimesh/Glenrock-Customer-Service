@@ -70,8 +70,7 @@ dependencies {
     implementation 'com.github.sujithkanna:smileyrating:1.6.8'
 
     //FBButton
-  //  implementation 'com.github.jd-alexander:android-flat-button:v1.1'
-
+    //  implementation 'com.github.jd-alexander:android-flat-button:v1.1'
 
 
 }
