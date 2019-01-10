@@ -14,64 +14,68 @@
     <Button
         android:id="@+id/about_hotels"
         android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_button"
         android:text="About Hotel"
-        android:backgroundTint="#a0e680"
+        android:theme="@style/MyButton"
+
 
         />
-
 
 
     <Button
         android:id="@+id/reservation"
         android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
         android:text="Reservation"
-        android:layout_marginTop="130dp"
-        android:backgroundTint="#a0e680"
-
-        />
-
+        android:theme="@style/MyButton"/>
 
 
     <Button
         android:id="@+id/travel_guide"
         android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_button"
         android:text="Travel Guide"
-        android:backgroundTint="#a0e680"
+        android:theme="@style/MyButton"
+
 
         />
 
-        <Button
-            android:id="@+id/facilities"
-            android:layout_width="300dp"
-            android:layout_marginLeft="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="260dp"
-            android:text="Facilities"
-            android:backgroundTint="#a0e680"
-
-            />
 
     <Button
         android:id="@+id/Connectivity"
         android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="325dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/custom_button"
         android:text="Connectivity"
-        android:backgroundTint="#a0e680"
-        android:elevation="10dp"
+        android:theme="@style/MyButton"
+
 
         />
 
+    <!--<Button-->
+    <!--android:id="@+id/facilities"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginTop="260dp"-->
+    <!--android:text="Facilities"-->
+    <!--android:background="@drawable/custom_button"-->
+
+
+    <!--/>-->
+
+    // android:theme="@style/MyButton"
 
 
 </FrameLayout>

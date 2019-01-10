@@ -105,7 +105,14 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Social_Media"></activity>
+        <activity android:name=".Social_Media" />
+        <activity android:name=".LandmarkPlaces.lanmark_detail2" />
+        <activity android:name=".LandmarkPlaces.lanmark_detail3" />
+        <activity android:name=".LandmarkPlaces.lanmark_detail4" />
+        <activity android:name=".LandmarkPlaces.lanmark_detail5" />
+        <activity android:name=".LandmarkPlaces.lanmark_detail6" />
+        <activity android:name=".Accomodation.Superior" />
+        <activity android:name=".Accomodation.Semi_luxurry"></activity>
     </application>
 
 </manifest>

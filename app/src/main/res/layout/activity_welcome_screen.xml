@@ -13,13 +13,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="108dp"
         android:text="Welcome To "
         android:textColor="#fff"
         android:textSize="35sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="48dp" />
+        tools:layout_editor_absoluteX="70dp" />
 
     <ProgressBar
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    <!--<solid android:color="#a0e680"/>-->
+    <gradient android:startColor="#3f890c" android:endColor="#189836" android:type="linear"/>
+    <corners android:radius="50dp"/>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/InstagramBtn"-->
+        <!--android:layout_width="245dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginEnd="25dp"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:background="@drawable/custom_button2"-->
+        <!--android:backgroundTint="#d14f9b"-->
+        <!--android:text="Instagram" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/TripadddBtn"-->
+        <!--android:layout_width="245dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/facebookBtn"-->
+        <!--android:layout_marginTop="250dp"-->
+        <!--android:layout_marginEnd="25dp"-->
+        <!--android:background="@drawable/custom_button2"-->
+        <!--android:backgroundTint="#5aec64"-->
+        <!--android:text="Tripadvisor" />-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/facebookBtn"-->
+        <!--android:layout_width="245dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignStart="@+id/InstagramBtn"-->
+        <!--android:layout_marginBottom="190dp"-->
+        <!--android:background="@drawable/custom_button2"-->
+        <!--android:backgroundTint="#1896c5"-->
+        <!--android:text="Facebook" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/Twittwerntn"-->
+        <!--android:layout_width="245dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignStart="@+id/TripadddBtn"-->
+        <!--android:layout_marginBottom="100dp"-->
+        <!--android:background="@drawable/custom_button2"-->
+        <!--android:backgroundTint="#18c5b9"-->
+        <!--android:text="Twitter" />-->
+    <!--//android:background="@drawable/custom_button"-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignTop="@+id/facebookBtn"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:src="@drawable/fb" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignTop="@+id/InstagramBtn"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:src="@drawable/insta" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginTop="243dp"-->
+        <!--android:src="@drawable/tp" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignTop="@+id/Twittwerntn"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:src="@drawable/twitter" />-->
+
+</shape>

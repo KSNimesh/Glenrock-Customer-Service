@@ -29,7 +29,8 @@
         <activity android:name=".Maps.Lanmark_info" />
         <activity android:name=".FoodDetails" />
         <activity android:name=".Mygallery" />
-        <activity android:name=".OrderStatus"></activity>
+        <activity android:name=".OrderStatus" />
+        <activity android:name=".Accomodation.Speciality"></activity>
     </application>
 
 </manifest>

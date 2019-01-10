@@ -54,8 +54,6 @@ public class OrderStatus extends AppCompatActivity {
 //
 
         //latee code have big codes
-
-
         loadOders( FoodCommon.currentUser.getPackage_No());
 
     }

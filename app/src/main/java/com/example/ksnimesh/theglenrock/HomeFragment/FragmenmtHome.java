@@ -64,13 +64,13 @@ public class FragmenmtHome extends Fragment {
 
 
 
-        Button facilities=(Button)view.findViewById( R.id.facilities );
-        facilities.setOnClickListener( new View.OnClickListener( ) {
-            @Override
-            public void onClick(View v) {
-                openfacilities();
-            }
-        } );
+//        Button facilities=(Button)view.findViewById( R.id.facilities );
+//        facilities.setOnClickListener( new View.OnClickListener( ) {
+//            @Override
+//            public void onClick(View v) {
+//                openfacilities();
+//            }
+//        } );
 
 
 
@@ -108,10 +108,10 @@ public class FragmenmtHome extends Fragment {
     }
 
 
-    public void openfacilities() {
-        Intent intent = new Intent( getActivity(),Facilities.class);
-        startActivity( intent );
-    }
+//    public void openfacilities() {
+//        Intent intent = new Intent( getActivity(),Facilities.class);
+//        startActivity( intent );
+//    }
 
 
     public void openconnect() {

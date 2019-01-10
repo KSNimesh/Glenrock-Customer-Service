@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutFragment.GalleryFragment">
+    tools:context=".AboutFragment.GalleryFragment"
+    android:background="@drawable/theglen"
+    >
     <!--android:padding="5dp"-->
     <!--android:paddingBottom="0dp"-->
     <!--android:paddingLeft="0dp"-->
@@ -15,7 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Open Gallery"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#a0e680"/>
 
 
 <!--<GridView-->

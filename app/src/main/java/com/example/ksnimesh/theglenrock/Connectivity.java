@@ -36,7 +36,7 @@ import com.example.ksnimesh.theglenrock.Tabs.pagerAdapter;
 
 //
 public class Connectivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,
-        Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener
+        Tab2 .OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener
 {
 
     @Override
